@@ -1,0 +1,247 @@
+/*#region cssReset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*#endregion*/
+
+/* 
+blue: #004f9e
+dark blue: #03438b
+red: #fe0002
+dark red: #71090e
+*/
+:root {
+    --blue: #004f9e;
+    --darkblue: #03438b;
+    --red: #fe0002;
+    --darkred: #71090e;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+#main {
+    background-color: var(--darkblue);
+    margin: 30px 15px;
+    padding: 20px 75px;
+}
+
+h1 {
+    font-size: 5vw;
+}
+h2 {
+    font-size: 3vw;
+    padding-bottom: 10px;
+}
+p {
+    font-size: 1.5vw;
+}
+li {
+    font-size: 1.5vw;
+}
+figcaption {
+    font-size: 1.5vw;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* 
+===================================
+Header
+===================================
+*/
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-color: var(--red);
+    border-width: 5px;
+    border-style: solid;
+}
+
+header #img-div{
+    max-width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-color: var(--red);
+    border-width: 5px;
+    border-style: solid;
+}
+
+header #img-div img{
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    border-width: 5px;
+}
+
+header #img-div #img-caption {
+    margin: 10px 0;
+}
+
+/* 
+===================================
+Main Content
+===================================
+*/
+
+#tribute-info {
+    max-width: 100%;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#tribute-info .info {
+    background-color: white;
+    padding: 20px 10px;
+    width: 50%;
+}
+
+#tribute-info ul {
+    height: 100%;
+    display: table;
+}
+
+#tribute-info ul li {
+    display: table-row;
+    line-height: 2em;
+}
+
+#tribute-info figure{
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+#tribute-info img {
+    width: 50%;
+    height: auto;
+}
+
+#tribute-info .ninja-sex-party-img img {
+    width: 75%;
+}
+
+#tribute-info .early-life,
+#tribute-info .early-career,
+#tribute-info .ninja-sex-party {
+    display: flex;
+}
+
+#tribute-info .early-career {
+    flex-direction: row-reverse;
+}
+
+.life-section {
+    background-color: white;
+    padding-bottom: 25px;
+    margin: 50px 0;
+    max-width: 100%;
+    border-color: var(--red);
+    border-width: 5px;
+    border-style: solid;
+}
+
+img {
+    border-color: var(--red);
+    border-width: 5px;
+    border-style: solid;
+}
+
+@media screen and (max-width: 700px) {
+
+    #main {
+        padding: 20px 20px;
+    }
+
+    #tribute-info .early-life,
+    #tribute-info .early-career,
+    #tribute-info .ninja-sex-party {
+        display: block;
+    }
+
+    .life-section {
+        max-width: 100%;
+    }
+
+    #tribute-info .info,
+    #tribute-info figure {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+    li {
+        font-size: 16px;
+    }
+    figcaption {
+        font-size: 12px;
+    }
+
+
+}
