@@ -60,6 +60,7 @@ dark red: #71090e
     --darkblue: #03438b;
     --red: #fe0002;
     --darkred: #71090e;
+    --offwhite: #ffefef;
 }
 
 body {
@@ -106,7 +107,7 @@ header {
 header h1 {
     padding: 10px;
     margin-bottom: 50px;
-    background-color: white;
+    background-color: var(--offwhite);
     border-color: var(--red);
     border-width: 5px;
     border-style: solid;
@@ -114,7 +115,7 @@ header h1 {
 
 header #img-div{
     max-width: 100%;
-    background-color: white;
+    background-color: var(--offwhite);
     padding: 10px;
     border-color: var(--red);
     border-width: 5px;
@@ -146,7 +147,7 @@ Main Content
 }
 
 #tribute-info .info {
-    background-color: white;
+    /* background-color: white; */
     padding: 20px 10px;
     width: 50%;
 }
@@ -162,7 +163,7 @@ Main Content
 }
 
 #tribute-info figure{
-    background-color: white;
+    /* background-color: white; */
     padding: 20px 0;
     display: flex;
     width: 50%;
@@ -189,7 +190,7 @@ Main Content
 }
 
 .life-section {
-    background-color: white;
+    background-color: var(--offwhite);
     padding-bottom: 25px;
     margin: 50px 0;
     max-width: 100%;
